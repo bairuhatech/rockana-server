@@ -23,7 +23,7 @@ export class ImgcompressService {
       image.quality(80);
       const compressedImageBuffer = await image.getBufferAsync(Jimp.MIME_JPEG);
       const bucketName = "bairuha-bucket";
-      const dirName = "nextmiddleeast/products";
+      const dirName = "rockana/products";
       const params = {
         Bucket: bucketName,
         Key: `${dirName}/${Date.now()}.jpg`,
@@ -41,7 +41,7 @@ export class ImgcompressService {
   async uploadToS3(file: Express.Multer.File): Promise<string> {
     try {
       const bucketName = "bairuha-bucket";
-      const dirName = "nextmiddleeast/products";
+      const dirName = "rockana/products";
       const params = {
         Bucket: bucketName,
         Key: `${dirName}/${file.originalname}`,
