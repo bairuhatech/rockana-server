@@ -20,8 +20,8 @@ async function bootstrap() {
     allowedHeaders: "*",
     origin: "*",
   });
-  await app.listen(process.env.PORT || 8000, () =>
-    logger.log(`server is running on port ${process.env.PORT || 8000} `)
+  await app.listen(process.env.PORT || 3002, () =>
+    logger.log(`server is running on port ${process.env.PORT || 3002} `)
   );
 }
 //test
