@@ -3,10 +3,10 @@ import { Dialect } from "sequelize/types";
 export const config = {
   database: {
     dialect: "postgres" as Dialect,
-    host: "51.159.104.4",
+    host: "46.28.44.14",
     port: 5432,
-    username: "bairuhauser",
-    password: "bairuhauser@123!",
+    username: "bairuhapgsqluser",
+    password: "BAiruhamysqluser123_",
     database: "rockana-dev",
     logging: false,
   },
